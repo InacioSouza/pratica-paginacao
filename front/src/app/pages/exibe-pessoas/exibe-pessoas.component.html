@@ -1,0 +1,23 @@
+<div class="exibicao">
+    <table *ngIf="pessoas.length != 0">
+        <thead class="cabecalho">
+            <tr>
+                <td>ID</td>
+                <td>Nome</td>
+                <td>Idade</td>
+                <td>Nacionalidade</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let pessoa of pessoas" class="dados">
+                <td>{{pessoa.id}}</td>
+                <td>{{pessoa.nome}}</td>
+                <td>{{pessoa.idade}}</td>
+                <td>{{pessoa.nacionalidade}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <app-paginacao (dadosPaginacao)="carregaDados($event)" [limite]="qtdDadosPorPagina"></app-paginacao>
+</div>

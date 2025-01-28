@@ -1,0 +1,28 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.exibicao {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cabecalho {
+  background-color: rgb(30, 184, 30);
+}
+
+.cabecalho tr td {
+  min-width: 40px;
+  padding: 3px;
+  text-align: center;
+}
+
+.dados td {
+  text-align: center;
+  border: 0.5px solid black;
+}
+
+app-paginacao{
+    margin-left: auto;
+}

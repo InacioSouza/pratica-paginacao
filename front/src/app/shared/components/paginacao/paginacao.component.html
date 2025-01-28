@@ -1,0 +1,5 @@
+<div class="controles">
+    <button (click)="paginaAnterior()" [disabled]="paginaAtual === 1">Anterior</button>
+    <span>Página {{paginaAtual}} de {{totalDePaginas}}</span>
+    <button (click)="proximaPagina()" [disabled]="paginaAtual === totalDePaginas">Próxima</button>
+</div>
